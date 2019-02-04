@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>In_Japan CONTACT</title>
+	<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="logo">LEE<br>KIYEON</div>
+		<nav id="js-menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<div class="pannel"><div class ="dropbtn"><li><a href="gallery.html">GALLERY</a></li></div>
+				<div class="dropdown">
+					<a href="gallery.html">LIFE</a>
+       				<a href="work.html">WORK</a>
+      			</div></div>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<div class="scroll-bg bg-color04">
+		 <h1>CONTACT</h1><br><br> 
+     <!-- 버튼 --> 
+     <button class="trigger">Click Here!</button><br><br>
+	<div class="scroll-bg-content">
+		<h1>introduction</h1><br>
+		<p>Speaking ability : Korean, English, Japanese<br>
+			Used Programming language in this site : HTML, CSS, Javascript<br>
+			Program that I can use : Unity, Photoshop, Illustrator, Dreamweaver<br><br>
+			Also, if you are interested in cafe operation, message to me!<br>
+			I help my mom in her cafe. She has owned her cafe over 10 years.
+		</p></div>
+     
+     <!-- 팝업 될 레이어 --> 
+     <div class="modal"> 
+         <div class="modal-content"> 
+             <span class="close-button">&times;</span> 
+             <h2 class="title">Send Message</h2> 
+             <form action="#post.php" method="POST"> 
+               <label for="email">Email</label> 
+               <input type="email" name="email" placeholder="Your email" required="required"> 
+               <label></label> 
+               <textarea name="message" placeholder="Test Message" required="required"></textarea> 
+                <input type="button" id="cancel" value="Cancel"> 
+               <input type="submit" id="submit" value="Send"> 
+            </form> 
+         </div> 
+     </div>
+<script type="text/javascript"> 
+         var modal = document.querySelector(".modal"); 
+         var trigger = document.querySelector(".trigger"); 
+         var closeButton = document.querySelector(".close-button"); 
+         var cancelButton = document.querySelector("#cancel");
+
+        //console.log(modal);
+
+        function toggleModal() { 
+             modal.classList.toggle("show-modal"); 
+         }
+
+        function windowOnClick(event) { 
+             if (event.target === modal) { 
+                 toggleModal(); 
+             } 
+         }
+
+        trigger.addEventListener("click", toggleModal); 
+         closeButton.addEventListener("click", toggleModal); 
+         cancel.addEventListener("click", toggleModal); 
+         window.addEventListener("click", windowOnClick); 
+     </script>
+		
+
+
+
+
+
+		
+		
+<div class="scroll-bg-content">
+  
+</div>
+	</div>
+	
+	<footer>
+    <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-facebook.png">
+                        <img class="social-hover" src="images/social-facebook-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-pinterest.png">
+                        <img class="social-hover" src="images/social-pinterest-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-twitter.png">
+                        <img class="social-hover" src="images/social-twitter-hover.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="#">KIYEON LEE</a></p>
+                <p class="footer-disclaimer">Any reference to associated logos is for demonstration purposes only and is not intended to refer to any actual organization or event.</p>
+                <p class="footer-legal">2019 Adobe Systems Incorporated. All rights reserved.</p>
+            </div>
+      </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

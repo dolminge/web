@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>In_Japan ABOUT</title>
+	<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru&amp;subset=japanese" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+
+    <style>
+    .slider {
+        width: 80%;
+        height:650px; overflow:hidden;
+        position:relative;
+        margin:20px auto;
+    }
+
+    .slider img {
+        width: 80%;
+        height: 80%;
+    }
+    .slick-prev { position:absolute; z-index:999; top:50%; left:5%; border:0; padding:10px; background: #000; color:#fff; box-shadow:0 0 10px rgba(255,255,255,0.8);}
+    .slick-next { position:absolute; z-index:999; top:50%; right:5%; border:0; padding:10px; background: #000; color:#fff; box-shadow:0 0 10px rgba(255,255,255,0.8)}
+    
+     </style>
+ 
+    <link href="slick.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js">
+    </script>
+    <script src="slick.js"></script>
+    <script src="jquery.easing.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="logo">LEE<br>KIYEON</div>
+		<nav id="js-menu">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<div class="pannel"><div class ="dropbtn"><li><a href="#">GALLERY</a></li></div>
+				<div class="dropdown">
+					<a href="gallery.html">LIFE</a>
+       				<a href="work.html">WORK</a>
+      			</div></div>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="scroll-bg bg-color05">
+		
+			<h1>The works that I made with illustrator</h1><br><br>
+		
+	<h1>banner / poster / cafe menu</h1><br><br><br>
+		<p>If you have question about this or request something, use CONTACT page!</p>
+		
+		
+    <div class="slider single-item" class="center">
+        <img src="b-1.png" alt="img">
+        <img src="b-2.png" alt="img">
+        <img src="b-3.png" alt="img">
+        <img src="b-4.png" alt="img">
+    </div>
+    <script>
+    $('.single-item').slick({
+      autoplay:true,
+      autoplaySpeed:5000,	
+      fade:true,
+      cssEase:"ease",
+      easing:"ease",
+    });
+    </script>
+				
+				Click button to right to left!<br><br>
+		It also move it self with a moment<br><br><br>
+
+		
+
+			</div>
+		<div class="scroll-bg-content">
+			
+			
+		</div>
+	</div>
+	
+	<footer>
+    <div class="footer-content">
+            <ul class="footer-social">
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-facebook.png">
+                        <img class="social-hover" src="images/social-facebook-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-pinterest.png">
+                        <img class="social-hover" src="images/social-pinterest-hover.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="social-default" src="images/social-twitter.png">
+                        <img class="social-hover" src="images/social-twitter-hover.png">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-info">
+                <p class="footer-credit">Website design by <a href="#">KIYEON LEE</a></p>
+                <p class="footer-disclaimer">Any reference to associated logos is for demonstration purposes only and is not intended to refer to any actual organization or event.</p>
+                <p class="footer-legal">2019 Adobe Systems Incorporated. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
